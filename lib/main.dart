@@ -1,4 +1,5 @@
 import 'package:contactapp/HomeView.dart';
+import 'package:contactapp/contactdetailview.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -17,7 +18,7 @@ class ContactApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: Homeview(),
+      home: ContactDetailView(),
     );
   }
 }

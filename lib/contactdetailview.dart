@@ -27,6 +27,8 @@ class ContactDetailView extends StatelessWidget {
           ),
           CircleAvatar(
             radius: 60,
+            backgroundImage: NetworkImage(
+                'https://images.unsplash.com/photo-1471018238625-87ca40f13b31?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80'),
           ),
           const SizedBox(
             height: 10,
@@ -52,6 +54,7 @@ class ContactDetailView extends StatelessWidget {
             height: 10,
           ),
           Container(
+            color: Colors.blueGrey.withOpacity(0.4),
             child: Column(
               children: [
                 ListTile(
@@ -115,6 +118,34 @@ class ContactDetailView extends StatelessWidget {
                     ),
                   ),
                 )
+              ],
+            ),
+          ),
+          const Card(
+            child: const ListTile(
+              title: Text(
+                'Account Linked',
+                style: TextStyle(
+                  fontSize: 19,
+                  fontWeight: FontWeight.w800,
+                  color: Colors.black,
+                ),
+              ),
+            ),
+          ),
+          Container(
+            color: Colors.blueGrey.withOpacity(0.2),
+            child: Column(
+              children: [
+                ListTile(
+                  title: Text(
+                    'Telegram',
+                    style: TextStyle(
+                        fontSize: 19,
+                        fontWeight: FontWeight.w800,
+                        color: Colors.black),
+                  ),
+                ),
               ],
             ),
           )
